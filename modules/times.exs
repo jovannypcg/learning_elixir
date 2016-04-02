@@ -8,5 +8,5 @@ defmodule Times do
     IO.puts "Hi, #{name}!"
   )
 
-  def triple(n), do: n * 3 end
+  def triple(n), do: n * 3
 end
