@@ -22,4 +22,7 @@ defmodule CustomList do
   def sum([head | tail]), do: sum(tail, head)
   def sum([], total), do: total
   def sum([head | tail], total), do: sum(tail, head + total)
+
+  def names_from_maps([]), do: []
+  def names_from_maps([ head | tail ]), do: [head[:name] | names_from_maps(tail)]
 end
